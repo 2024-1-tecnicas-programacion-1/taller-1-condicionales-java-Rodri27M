@@ -10,20 +10,29 @@ public class SetDeTenis {
     public static String evaluar(int numVictoriasA, int numVictoriasB) {
         // TODO: Coloca aquí el código del ejercicio 1: Set de tenis
         int resta = Math.abs(numVictoriasA-numVictoriasB);
-        if(resta>=2 & resta<=2){
-            if(numVictoriasA>numVictoriasB){
+         if (resta>2 || resta == 0){
+           System.out.println("Inválido");
+           return "";
+       }
+        if((numVictoriasA >= 6  || numVictoriasB >= 6) && resta<=2 ){   
+        if (resta ==1 && (numVictoriasA < 6 || numVictoriasB < 6)){
+            System.out.println("Aún no termina");
+                 return "";
+        }
+        if(resta<=2 & resta != 0){
+              if(numVictoriasA>numVictoriasB){
                 System.out.println("Ganó A");
+                 return "";
             }
             if (numVictoriasB>numVictoriasA){
                 System.out.println("Ganó B");
+                 return "";
                }   
         }
-        if(resta<=1 ){
-                 System.out.println("Aún no termina");
-             }
-        else{
-            System.out.println("Inválido");
-        }
+             }else {
+                System.out.println("Aún no termina");
+                 return "";
+        };
         return "";
     }
     

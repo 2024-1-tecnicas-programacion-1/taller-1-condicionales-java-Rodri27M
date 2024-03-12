@@ -13,6 +13,12 @@ public class Division {
         // TODO: Coloca aquí el código del ejercicio 3: Division
         int cociente = 0;
         int residuo = 0;
+        if(divisor == 0){
+          
+          String respuesta = "Error. No se puede dividir en cero.";
+               
+          return respuesta;
+        } 
         int division = dividendo / divisor; 
         residuo = dividendo % divisor; 
         if(residuo == 0){
