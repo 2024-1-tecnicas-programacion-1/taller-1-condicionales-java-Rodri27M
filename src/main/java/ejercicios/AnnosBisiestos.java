@@ -15,10 +15,10 @@ public class AnnosBisiestos {
         if ((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)){
             residuo = true;
         }
-        if(residuo=true ){
+        if(residuo==true ){
             System.out.println(anno + " es bisiesto");   
             }else{
-                System.out.println(anno +" no es bisiesto")
+                System.out.println(anno + " no es bisiesto")
                 ;}
         return "";
     }
